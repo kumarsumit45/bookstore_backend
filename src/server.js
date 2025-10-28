@@ -9,7 +9,7 @@ import job from "./lib/cron.js";
 const app = express();
 const Port = process.env.PORT || 5000;
 
-app.get("/api",async(req,res)=>{
+app.get("/",async(req,res)=>{
     res.status(200).json({ message: "Api is working" })
 })
 
